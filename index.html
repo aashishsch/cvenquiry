@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CA Aashish Sachdev | AI, Excel & Data Analytics Trainer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --accent:#B8520F; --accent2:#E07B27; --ink:#222; --muted:#666; --soft:#FFF4EA; --line:#eee; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:Inter,Arial,sans-serif; color:var(--ink); background:#fff; line-height:1.6; }
+  .hero { background:linear-gradient(135deg,var(--accent),var(--accent2)); color:#fff; padding:48px 20px; }
+  .hero-in { max-width:900px; margin:0 auto; display:flex; gap:32px; align-items:center; }
+  .hero img { width:180px; height:180px; border-radius:50%; object-fit:cover; border:5px solid #fff; flex-shrink:0; }
+  .hero h1 { margin:0; font-size:2.3rem; line-height:1.15; }
+  .hero .title { font-size:1.2rem; margin:6px 0 12px; opacity:.95; }
+  .cred { display:inline-block; background:rgba(255,255,255,.2); padding:4px 14px; border-radius:20px; font-weight:600; font-size:.95rem; }
+  main { max-width:900px; margin:0 auto; padding:10px 20px 60px; }
+  section { padding:28px 0; border-bottom:1px solid var(--line); }
+  h2 { color:var(--accent); font-size:1.2rem; text-transform:uppercase; letter-spacing:1px; margin:0 0 14px; }
+  h3 { margin:18px 0 6px; font-size:1.05rem; }
+  ul { padding-left:20px; margin:6px 0; } li { margin-bottom:6px; }
+  .chips { display:flex; flex-wrap:wrap; gap:10px; }
+  .chip { background:var(--soft); color:var(--accent); border:1px solid #f3d3b8; padding:6px 14px; border-radius:20px; font-size:.92rem; font-weight:500; }
+  .cta { text-align:center; padding:40px 0 0; border:0; }
+  .btn { background:var(--accent); color:#fff; border:0; padding:16px 40px; font:600 1.1rem Inter,Arial,sans-serif; border-radius:40px; cursor:pointer; box-shadow:0 6px 18px rgba(184,82,15,.35); }
+  .btn:hover { background:var(--accent2); }
+  .btn:disabled { opacity:.6; cursor:wait; }
+  /* modal */
+  .overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,.55); align-items:center; justify-content:center; padding:16px; z-index:10; }
+  .overlay.open { display:flex; }
+  .modal { background:#fff; border-radius:14px; padding:28px; width:100%; max-width:460px; max-height:92vh; overflow:auto; position:relative; }
+  .modal h2 { text-transform:none; letter-spacing:0; font-size:1.4rem; }
+  .close { position:absolute; top:10px; right:14px; background:none; border:0; font-size:1.8rem; cursor:pointer; color:var(--muted); }
+  label { display:block; font-weight:600; font-size:.9rem; margin:14px 0 4px; }
+  input, textarea { width:100%; padding:10px 12px; border:1px solid #ccc; border-radius:8px; font:inherit; }
+  input:focus, textarea:focus { outline:2px solid var(--accent2); border-color:var(--accent2); }
+  .hint { font-size:.8rem; color:var(--muted); }
+  .phone { display:flex; align-items:center; gap:8px; }
+  .phone img { flex-shrink:0; border-radius:2px; box-shadow:0 0 0 1px #ddd; }
+  .phone select { width:auto; padding:10px 6px; border:1px solid #ccc; border-radius:8px; font:inherit; background:#fff; }
+  .phone input { flex:1; }
+  #msg { margin-top:14px; padding:12px; border-radius:8px; display:none; font-size:.95rem; }
+  #msg.ok { display:block; background:#E8F6EC; color:#1c6b34; }
+  #msg.err { display:block; background:#FDECEA; color:#a12622; }
+  .modal .btn { width:100%; margin-top:18px; padding:13px; }
+  @media (max-width:640px) {
+    .hero-in { flex-direction:column; text-align:center; }
+    .hero h1 { font-size:1.8rem; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-in">
+    <img src="profile.jpg" alt="Photo of CA Aashish Sachdev">
+    <div>
+      <h1>CA Aashish Sachdev</h1>
+      <div class="title">AI, Excel &amp; Data Analytics Trainer</div>
+      <span class="cred">FCA &middot; DISA (ICAI) &middot; LL.B &middot; M.Com</span>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section>
+    <h2>Profile</h2>
+    <p>Chartered Accountant, AI, Advanced Excel &amp; Data Analytics Trainer, and Finance Transformation Specialist, widely recognised for upskilling CAs and finance professionals in AI tools, Power Automate workflows, Google Sheets and Advanced Excel automation. Over a 9+ year career, his mission has been to help professionals shift from manual working to technology-driven, insight-led decision making, having trained 5000+ Chartered Accountants and finance professionals through workshops, webinars and forums.</p>
+  </section>
+
+  <section>
+    <h2>Core Competencies</h2>
+    <div class="chips">
+      <span class="chip">AI Tools for Finance</span>
+      <span class="chip">Power Automate Workflows</span>
+      <span class="chip">Advanced Excel &amp; Power Query</span>
+      <span class="chip">Google Sheets Automation</span>
+      <span class="chip">BI &amp; Data Analytics</span>
+      <span class="chip">Finance Automation &amp; MIS</span>
+      <span class="chip">Internal Audit &amp; IFC</span>
+      <span class="chip">Implementation &amp; Technical Analysis</span>
+      <span class="chip">Dashboard Design &amp; Reporting</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Automation Toolkit</h2>
+    <div class="chips">
+      <span class="chip">Power Automate</span>
+      <span class="chip">Power BI</span>
+      <span class="chip">Advanced Excel</span>
+      <span class="chip">Google Sheets</span>
+      <span class="chip">AI Tools</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Professional Experience</h2>
+    <h3>Training &amp; Consulting: Excel, AI &amp; Data Analytics Trainer</h3>
+    <ul>
+      <li>Trained 5000+ CAs and finance professionals through corporate workshops, webinars and seminars on AI tools, Power Automate, Google Sheets, Advanced Excel and Power BI.</li>
+      <li>Delivered engagements for Big4-led consulting, ONGC, Fern Hotels, GST Saadhna Group and other organisations, building automated MIS, Power Automate workflows, dashboards and analytics-driven reporting across Google Sheets and Excel.</li>
+      <li>Conducted Internal Audit, IFC and System Audit engagements integrating Excel- and Sheets-based analytics with Power Automate and AI-assisted procedures.</li>
+    </ul>
+    <h3>Implementation &amp; Technical Analysis</h3>
+    <ul>
+      <li>Design and implement Power Automate workflows that automate finance reporting, approvals and data consolidation, cutting manual effort across recurring MIS processes.</li>
+      <li>Lead technical analysis of finance operations to map processes, identify automation opportunities and translate requirements into Power Automate, Excel and Power BI solutions.</li>
+    </ul>
+    <h3>Ex-IRDAI, Hyderabad: Finance &amp; Investment, Central Government Association</h3>
+    <ul>
+      <li>Contributed to data-driven risk assessment and decision-support frameworks at IRDAI, Hyderabad.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Academic &amp; Professional Engagements</h2>
+    <ul>
+      <li>National-level speaker on AI, Advanced Excel &amp; Data Analytics in Finance at ICAI branches, regional councils and professional forums across India.</li>
+    </ul>
+  </section>
+
+  <section class="cta">
+    <button class="btn" id="openBtn">Connect with me</button>
+  </section>
+</main>
+
+<!-- The enquiry form lives inside this pop-up (modal) -->
+<div class="overlay" id="overlay">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="formTitle">
+    <button class="close" id="closeBtn" aria-label="Close">&times;</button>
+    <h2 id="formTitle">Get in touch</h2>
+    <form id="enquiryForm">
+      <label for="name">Full name</label>
+      <input id="name" name="name" type="text" required autocomplete="name">
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required autocomplete="email">
+
+      <label for="mobile">Mobile number</label>
+      <div class="phone">
+        <img id="flag" src="https://flagcdn.com/24x18/in.png" alt="Country flag" width="24" height="18">
+        <select id="country" aria-label="Country code"></select>
+        <input id="mobile" name="mobile" type="tel" required pattern="[6-9][0-9]{9}" maxlength="10" inputmode="numeric" title="10 digit Indian mobile number starting with 6, 7, 8 or 9">
+      </div>
+      <div class="hint" id="mobileHint">10 digit Indian mobile number, starting with 6, 7, 8 or 9.</div>
+      <div class="hint" id="geoNote"></div>
+
+      <label for="enquiry">Enquiry</label>
+      <textarea id="enquiry" name="enquiry" rows="4" required></textarea>
+
+      <button class="btn" type="submit" id="submitBtn">Submit</button>
+    </form>
+    <div id="msg" role="status"></div>
+  </div>
+</div>
+
+<script>
+  // ============================================================
+  //  CONFIG: paste your n8n webhook URL between the quotes below.
+  //  Test URL       contains /webhook-test/  and works ONLY while
+  //                 "Listen for test event" is switched on in n8n.
+  //  Production URL contains /webhook/       and works after the
+  //                 workflow is published (activated).
+  // ============================================================
+  const WEBHOOK_URL = "https://aashishsachdev.app.n8n.cloud/webhook/cv-enquiry";
+
+  // Optional: free token from ipinfo.io (sign up, copy token). Works without one for a class demo.
+  const IPINFO_TOKEN = "";
+
+  const overlay = document.getElementById("overlay");
+  const form = document.getElementById("enquiryForm");
+  const msg = document.getElementById("msg");
+  const submitBtn = document.getElementById("submitBtn");
+  const countrySel = document.getElementById("country");
+  const flagImg = document.getElementById("flag");
+  const mobileInput = document.getElementById("mobile");
+  const mobileHint = document.getElementById("mobileHint");
+  const geoNote = document.getElementById("geoNote");
+
+  // ------------------------------------------------------------
+  //  COUNTRY CODES: two-letter country code -> phone dialling code
+  // ------------------------------------------------------------
+  const DIAL_CODES = {
+    IN: "+91", US: "+1", GB: "+44", AE: "+971", CA: "+1", AU: "+61",
+    SG: "+65", SA: "+966", QA: "+974", NP: "+977", BD: "+880", LK: "+94", DE: "+49"
+  };
+  // Fill the country drop-down, e.g. "IN +91"
+  for (const [code, dial] of Object.entries(DIAL_CODES)) {
+    countrySel.add(new Option(code + " " + dial, code));
+  }
+
+  // Show the flag and set the phone rule for the chosen country
+  function setCountry(code) {
+    if (!DIAL_CODES[code]) code = "IN";              // unknown country: use India
+    countrySel.value = code;
+    flagImg.src = "https://flagcdn.com/24x18/" + code.toLowerCase() + ".png";
+    if (code === "IN") {
+      mobileInput.pattern = "[6-9][0-9]{9}"; mobileInput.maxLength = 10;
+      mobileHint.textContent = "10 digit Indian mobile number, starting with 6, 7, 8 or 9.";
+    } else {
+      mobileInput.pattern = "[0-9]{6,15}"; mobileInput.maxLength = 15;
+      mobileHint.textContent = "Mobile number without the country code, digits only.";
+    }
+  }
+  countrySel.addEventListener("change", () => setCountry(countrySel.value));
+  setCountry("IN");
+
+  // ------------------------------------------------------------
+  //  API CALL: ask ipinfo.io where this visitor is.
+  //  We send a GET request, ipinfo sends back a JSON object like:
+  //  { "ip": "...", "city": "Mohali", "region": "Punjab", "country": "IN", ... }
+  // ------------------------------------------------------------
+  let visitor = { city: "", region: "", country: "" };
+  async function detectCountry() {
+    try {
+      const url = "https://ipinfo.io/json" + (IPINFO_TOKEN ? "?token=" + IPINFO_TOKEN : "");
+      const res = await fetch(url);
+      const info = await res.json();                  // read the JSON reply
+      console.log("ipinfo.io replied:", info);        // press F12 to see it
+      visitor = { city: info.city || "", region: info.region || "", country: info.country || "" };
+      setCountry(info.country);
+      if (info.city) geoNote.textContent = "Detected location: " + info.city + ", " + info.country;
+    } catch (err) {
+      console.warn("ipinfo.io not reachable, using India as default:", err);
+    }
+  }
+  let detected = false;
+
+  // Open the pop-up and put the cursor in the first field
+  function openModal() {
+    overlay.classList.add("open");
+    msg.className = "";
+    document.getElementById("name").focus();
+    if (!detected) { detected = true; detectCountry(); } // call the API once
+  }
+  // Close the pop-up
+  function closeModal() { overlay.classList.remove("open"); }
+
+  document.getElementById("openBtn").addEventListener("click", openModal);
+  document.getElementById("closeBtn").addEventListener("click", closeModal);
+  // Esc key closes the pop-up
+  document.addEventListener("keydown", e => { if (e.key === "Escape") closeModal(); });
+
+  // Runs when the user clicks Submit
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault(); // stop the browser from reloading the page
+
+    // Safety check: the webhook URL must be replaced first
+    if (WEBHOOK_URL.includes("PASTE_YOUR")) {
+      alert("Please paste your n8n webhook URL in the WEBHOOK_URL line of the script first.");
+      return;
+    }
+
+    // Collect the form values into one object (trimmed)
+    const data = {
+      name: form.elements["name"].value.trim(),
+      email: form.elements["email"].value.trim(),
+      mobile: DIAL_CODES[countrySel.value] + " " + form.elements["mobile"].value.trim(),
+      enquiry: form.elements["enquiry"].value.trim(),
+      source: "CV website",
+      visitor: visitor          // an object inside the object: { city, region, country }
+    };
+    console.log(data); // this is a JSON object (press F12 to see it)
+
+    // Show that we are sending
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Sending...";
+    msg.className = "";
+
+    try {
+      // Send the data to n8n as a POST request with a JSON body
+      const res = await fetch(WEBHOOK_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data)
+      });
+      if (!res.ok) throw new Error("Server replied with status " + res.status);
+
+      // n8n may send JSON back; read it if it is there
+      let reply = null;
+      try { reply = await res.json(); } catch (err) { /* no JSON, that is fine */ }
+      console.log("n8n replied:", reply);
+
+      msg.className = "ok";
+      msg.textContent = "Thank you, " + data.name + ". Your enquiry has been received. Please check your email.";
+      form.reset();
+      setCountry(visitor.country || "IN"); // keep flag and code after clearing the form
+    } catch (error) {
+      // Network problem or n8n returned an error
+      console.error("Submit failed:", error);
+      msg.className = "err";
+      msg.textContent = "Sorry, we could not send your enquiry. Is the n8n workflow listening? Check the webhook URL.";
+    } finally {
+      // Put the button back to normal
+      submitBtn.disabled = false;
+      submitBtn.textContent = "Submit";
+    }
+  });
+</script>
+</body>
+</html>
